@@ -1,0 +1,45 @@
+@import './normalize.css';
+@import '../font/iconfont.css';
+* {
+    box-sizing: border-box;
+}
+
+.el-table__footer .cell {
+    /* text-align: right !important; */
+}
+
+.el-button.exportBtn {
+    float: right;
+    margin: -10px 0 10px 0;
+}
+
+
+/* 
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  margin: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  min-height: 150px;
+  min-width: 150px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background: #c0c4cc;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #c0c4cc;
+} */
+
+.el-table--scrollable-x .el-table__body-wrapper {
+    z-index: 1;
+}

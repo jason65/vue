@@ -1,0 +1,32 @@
+.kindo-box {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    .title {
+        height: 30px;
+        padding: 0 5px;
+        .label {
+            display: inline-block;
+            span {
+                line-height: 30px;
+            }
+            i {
+                display: none;
+            }
+        }
+        .mian-control {
+            margin-right: 4px;
+            line-height: 30px;
+            float: right;
+        }
+        .more-control {
+            line-height: 30px;
+            float: right;
+        }
+    }
+    .main {
+        padding: 5px;
+        overflow: hidden;
+        height: 100%;
+    }
+}

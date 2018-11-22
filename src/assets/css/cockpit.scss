@@ -1,0 +1,244 @@
+ul{margin:0;padding:0}
+li{list-style:none}
+.cart-top {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+  padding: 20px 20px 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  .text-num {
+    li {
+      display: flex;
+    }
+    .icon {
+      margin: 5px 25px 0 0;
+    }
+  }
+}
+.text-num{
+  display: flex;
+  justify-content: space-around;
+  li {
+    // display: flex;
+  }
+
+  .label{
+    font-size:14px;
+    color: #696969;
+  }
+  .value{
+    font-size: 20px;
+    color:#02bcd5;
+    font-weight:bold;
+    margin-top: 5px;
+  }
+}
+.bgc {}
+.wtba {
+  background-color: #e6f5e2;
+  margin-bottom: 10px;
+  padding: 10px;
+  // height: 127px;
+  .icon {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: relative;
+    top: -2px;
+    margin-right: 8px;
+  }
+  .value{
+    margin-left: 16px;
+    color:#556f80;
+  }
+  .label{
+    color:#556f80;
+  }
+}
+.arrow {
+  margin: 13px 0 0;
+  padding: 0;
+  font-size: 16px;
+  color: #4dbb38;
+  &:hover, &:focus {
+    color: #4dbb38;
+  }
+}
+.kpi {
+  .header{
+    background-color: #f2f2f2;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.85);
+    padding-left: 20px;
+  }
+  .content{
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e3e3e3;
+    &:last-child{
+      border-bottom: 0;
+    }
+    .name{
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #000;
+      .icon {
+        margin-right: 6px;
+        vertical-align: -4px;
+      }
+    }
+    ul {
+      margin-top: 8px;
+      li{
+        display: flex;
+        justify-content: space-between;
+        font-size:14px;
+        line-height: 26px;
+      }
+      span {
+        display: block;
+        color: #000;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .label{
+        min-width: 41%;
+        margin-right: 1%;
+      }
+      .value{
+        min-width: 29%;
+        margin: 0;
+      }
+      .perce{
+        min-width: 29%;
+        font-family: FontAwesome;
+        text-align: right;
+        &:before{
+          float: right;
+          margin-left: 5px;
+        }
+        &.up{
+          color: #ff0303;
+          &:before {
+            content: "\f062";
+          }
+        }
+        &.down{
+          color: #20d220;
+          &:before {
+            content: "\f063";
+          }
+        }
+        &.up1{
+          color: #ff0303;
+          &:before {
+            content: "\f063";
+          }
+        }
+        &.down1{
+          color: #20d220;
+          &:before {
+            content: "\f062";
+          }
+        }
+      }
+    }
+  }
+}
+.page-title {
+  font-size: 16px;
+  margin: 20px 5px 0;
+  span{
+    color:#0099cc;
+  }
+}
+.drgNum{
+  margin-top: 10px;
+  border: 1px solid #e5e5e5;
+  height: 289px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: #fff;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: #999;
+  }
+  .all {
+    padding: 17px 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    .icon {
+      margin: 5px 25px 0 0;
+    }
+    .label{
+      font-size:14px;
+      color: #696969;
+      float: left;
+      margin-right: 30px;
+    }
+    .value{
+      font-size: 20px;
+      color:#02bcd5;
+      font-weight:bold;
+      position: relative;
+      top: -3px;
+    }
+  }
+  .list {
+    li {
+      padding: 8px 10px;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      justify-content: space-around;
+      font-size:14px;
+    }
+    span {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .code {
+      width: 18%;
+    }
+    .name {
+      width:56%;
+    }
+    .num {
+      width:18%;
+      text-align: right;
+    }
+  }
+}
+.other{
+  display: flex;
+  height: 113px;
+  overflow: hidden;
+  .all {
+    border-bottom:0;
+    width: 50%;
+    &:first-child {
+      border-right: 1px solid #e5e5e5;
+    }
+    .icon {
+      margin: 5px 15px 0 0;
+    }
+    .label {
+      margin-right: 0;
+      float: none;
+      display: block;
+    }
+    .value {
+      top: 0;
+    }
+  }
+}

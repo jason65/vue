@@ -1,0 +1,115 @@
+.page-title {
+  font-size: 16px;
+  margin: 20px 5px 0;
+  span{
+    color:#0099cc;
+  }
+}
+.kpi {
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 14px;
+  ul {
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+    }
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 30px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    .other{
+      display: flex;
+      li {
+        display: flex;
+        margin-left:30px;
+      }
+      .label{
+        color: #000;
+      }
+      .value{
+        color:#0099cc;
+      }
+      .slave {
+        margin-left: 8px;
+        ul{
+          display: inline-flex;
+          li{
+            &:first-child{
+              margin-left: 0;
+            }
+          }
+        } 
+        span, .label{
+          color: #666;
+        }
+      }
+    }
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    .hr{
+      width: 100%;
+      background-color: #ebebeb;
+      height: 1px;
+      margin: 20px 0;
+      border: none;
+    }
+  }
+  .card {
+    min-width: 335px;
+    .name{
+      font-weight: bold;
+    }
+    ul {
+      margin-top: 15px;
+      li{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      span {
+        display: block;
+        color: rgba(0, 0, 0, 0.65);
+      }
+      .label{
+        width: 115px;
+        color: #666;
+      }
+      .value{
+        width: 110px;
+        margin: 0;
+      }
+      .perce{
+        width: 100px;
+        font-family: FontAwesome;
+        text-align: right;
+        &:before{
+          float: right;
+          margin-left: 5px;
+        }
+        &.up{
+          color: #ff0303;
+          &:before {
+            content: "\f062";
+          }
+        }
+        &.down{
+          color: #20d220;
+          &:before {
+            content: "\f063";
+          }
+        }
+      }
+    }
+  }
+}
